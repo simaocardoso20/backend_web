@@ -1,110 +1,97 @@
-/*let myLuckyNumber = 20;
-let myName = 'Simão';
-
-alert('O meu nome é: ' + myName);
-alert('O meu número favorito é: ' + myLuckyNumber);
-
-console.log('O meu nome é: ' + myName);
-console.log('O meu número favorito é: ' + myLuckyNumber); 
+//ex 17
 
 
-const MESSAGE = " TASTE THE RAINBOW! ";
-let whisper = MESSAGE.trim().toLowerCase();
+//ex pp 35
+// let myFirstVar = prompt('Qual é o teu primeiro nome?');
+// let surname = prompt('Qual é o teu primeiro apelido?');
 
-console.log(whisper); 
+// alert(`Olá ${myFirstVar} ${surname}`);
+// console.log(`Olá ${myFirstVar} ${surname}`);
 
-let test = 'Software';
-let test1 = test.indexOf('t');
-console.log(test1);
+//ex pp 39
+// let userWeekDay = prompt('que dia da semana é?');
+
+// if(userWeekDay.toLowerCase().trim() == 'sexta'){
+//     console.log('yay, sobrevivemos a mais uma semana');
+// }else{
+//     console.log('força nisso');
+// }
+
+// let userPass = prompt('Qual é a sua pass?');
+
+// if(userPass.length < 6){
+//     console.log('a pass tem que ter pelo menos 6 caracteres');
+// }else{
+//     console.log('pass ok');
+// }
+
+//pp 43
+// let planets = ['Mercúrio', 'Vénus', 'Terra', 'Mart', 'Jupiter', 'Saturno', 'Urano', 'Neptuno', 'Plutão'];
+// let oldPlanets = planets;
+// planets[3] = 'Marte';
+// planets.pop();
+// planets.unshift('novoPlaneta');
+// console.log(planets)
+
+//pp 55
+//for(let i =0; i<6; i++){
+//    console.log(i+ ' Da ba dee da ba daa');
+//}
+
+//for(let i = 25 ; i>=5 ; i-=5){
+//    console.log(i);
+//}
+
+//pp58
+//const people = ['Scooby', 'Velma', 'Daphne', 'Shaggy', 'Fred'];
+//for(let i=0; i<people.length; i++){
+//    console.log(people[i].toLocaleUpperCase());
+//}
+
+//for(let name of people){
+//    console.log(name) 
+//}
+
+//pp62
+let shoppingList = []
+let item = prompt('Qual é o item a adicionar? ou digite "fim" para encerrar)')
+for(let i = 0; i<shoppingList.length; i++){
+    console.log('item adicionado:' );   
+}
+shoppingList.push(item);
+console.log(shoppingList)
 
 
-const WORD = "skateboard";
-let facialHair = WORD.slice(5).replace('o', 'e');
-console.log(facialHair);
+let password = prompt('Qual é o código? ');
+while (password !== 'fim'){
 
-
-let fullName = 'Sara Monteiro';
-fullName.slice(0, fullName.indexOf(' '));
-console.log(fullName.slice(0, fullName.indexOf(' '))); 
-
-// sintaxe tradicional
-console.log("O meu nome é "+myName+"e o meu número preferido é "+myLuckyNumber"");
-
-// sintaxe simplificada
-console.log(`O meu nome é ${myName} e o meu apelido é ${myLuckyNumber}`); 
-
-let millionDolarQuestion = prompt('Qual é o seu nome?'); // Estou a criar uma variável onde vou querer a resposta a esta questão.
-console.log(millionDolarQuestion); // Estou a imprimir a resposta na consola. 
-
-
-let firstName = prompt('Qual é o seu nome?'); 
-let lastName = prompt('Qual é o seu último nome?'); 
-console.log(firstName + ' ' + lastName); 
-
-//alert('Olá ' + firstNameme + ' ' + lastName + '!');
-//console.log('Olá ' + fisrtName + ' ' + lastName + '!');
-
-alert(`Olá ${firstName} ${lastName}!`);
-console.log(`Olá ${firstName} ${lastName}!`); */
-
-let day = prompt('Qual é o dia da semana?');
-    switch (day) {
-        case 'segunda-feira':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        case 'terça-feira':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        case 'quarta-feira':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        case 'quinta-feira':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        case 'sexta-feira':
-            alert('yay, sobrevivemos a mais uma semana!');
-            break;
-        case 'sábado':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        case 'domingo':
-            alert('Que pena, queria tanto que fosse sexta!');
-            break;
-        default:
-            alert('Isso não é um dia da semana!');
-            break;
-
+    console.log('código errado');
+    password = prompt('Qual é o código? '); 
     }
 
-        console.log('day');
-        
-        let password = prompt('Qual é a sua password?'); 
-        if (password.length <=5 || password.length >=7) {
-            alert('A password deve ter pelo menos 6 caracteres!');
-            
-        } else {
-            alert('Password válida!');
-        }
-        console.log(password);
-
-
-    
-
-
-    
-
-    
-      
-
-    console.log(day); 
+   
 
 }
 
+   
+
+
+
+
+//Parte 2
+
+//let delete = prompt('Queres apagar o último item?');
+//shoppingList.splice(shoppingList.indexOf(delete), 1);
+
+//for(let i = 0; i<shoppingList.length; i++){
+//    console.log('item adicionado:' +shoppingList[i]);   
+//}
 
 
 
 
 
+    
 
 
 
