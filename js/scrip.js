@@ -30,19 +30,60 @@
 //console.log(myDay[4])
 
 //métodos de arrays
-//let shoppingList = ['batatas', 'feijão', 'bananas', 'uvas'];
-//let item = prompt('Qual é o item a adicionar');
 
-//shoppingList.push(item)
-
-// console.log(shoppingList)
-// console.log(shoppingList[0]);
-// console.log(shoppingList[1]);
-
-//for(let i = 0; i<shoppingList.length; i++){
-//   console.log('compra ' +shoppingList[i]);   
-//}
 
 //for(let element of shoppingList){
 // //   console.log(element) 
 //}
+
+
+//  let shoppingList = [];
+// let item = prompt('Qual é o item a adicionar?');
+// shoppingList.push(item);
+
+// while (item.toLowerCase().trim() !== 'fim') {
+//     shoppingList.push(item);
+//     item = prompt('Adicione outro item');
+//     }
+
+//     for(let element of shoppingList){
+//         console.log('comprar ' + element);
+//     }
+
+
+// console.log(shoppingList);
+
+
+// let courseStructure = {
+//     courseName: 'Software Developer',
+//     hours: 1000,
+//     module: ['js', 'algoritmia', 'mysql']
+// }
+
+// console.log(courseStructure.module[1])
+
+// let courseStructure = {
+//     courseName: 
+//     {
+//         name: 'SD',
+//         hours: [15,5]
+//     },
+//     hours: 1000,
+//     module: ['js', 'algoritmia', 'mysql']
+// }
+
+// console.log(courseStructure.courseName.hours[1])
+
+
+// let courseStructure = {
+//     courseName: 'Software Developer',
+//     hours: 1000,
+//     module: ['js', 'algoritmia', 'mysql']
+// }
+
+// courseStructure.courseName = 'AWS';
+// console.log(courseStructure.courseName);
+
+
+
+  

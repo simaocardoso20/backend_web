@@ -53,28 +53,21 @@
 //}
 
 //pp62
-let shoppingList = []
-let item = prompt('Qual é o item a adicionar? ou digite "fim" para encerrar)')
-for(let i = 0; i<shoppingList.length; i++){
-    console.log('item adicionado:' );   
-}
-shoppingList.push(item);
-console.log(shoppingList)
+//let shoppingList = []
+//let item = prompt('Qual é o item a adicionar? ou digite "fim" para encerrar)')
+//for(let i = 0; i<shoppingList.length; i++){
+//    console.log('item adicionado:' );   
+//}
+//shoppingList.push(item);
+//console.log(shoppingList)
 
 
-let password = prompt('Qual é o código? ');
-while (password !== 'fim'){
+//let password = prompt('Qual é o código? ');
+//while (password !== 'fim'){
 
-    console.log('código errado');
-    password = prompt('Qual é o código? '); 
-    }
-
-   
-
-}
-
-   
-
+ //   console.log('código errado');
+ //   password = prompt('Qual é o código? '); 
+ //   }
 
 
 
@@ -86,6 +79,36 @@ while (password !== 'fim'){
 //for(let i = 0; i<shoppingList.length; i++){
 //    console.log('item adicionado:' +shoppingList[i]);   
 //}
+
+
+//pp 
+
+
+// const airplaneSeats = [
+// ['Ruth', 'Anthony', 'Stevie'],
+// ['Amelia', 'Pedro', 'Maya'],
+// ['Xavier', 'Ananya', 'Luis'],
+// ['Luke', 'null', 'Deniz'],
+// ['Rin', 'Sakura', 'Francisco']
+// ];
+
+// airplaneSeats[3][1] = 'Simao';
+// console.log(airplaneSeats[3][1]);
+
+
+// let product = {
+//     productName: 'Bomba de Calor',
+//     inStock: true,
+//     price: 1.99,
+//     moeda: '€',
+//     color: ['vermelho', 'azul', 'verde']
+// }
+
+//     product.price = 2.55;
+//     console.log('O produto custa ' +product.price + product.moeda+ ' e a cor é ' +product.color[2]);
+
+
+
 
 
 
