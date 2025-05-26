@@ -107,6 +107,73 @@
 //     product.price = 2.55;
 //     console.log('O produto custa ' +product.price + product.moeda+ ' e a cor é ' +product.color[2]);
 
+// pp86
+
+// function firstNames() {
+// const fullNames = [   
+//   { first: 'Albus', last: 'Dumbledore' },
+//   { first: 'Harry', last: 'Potter' },
+//   { first: 'Hermione', last: 'Granger' },
+//   { first: 'Ron', last: 'Weasley' },
+//   { first: 'Rubeus', last: 'Hagrid' },
+//   { first: 'Minerva', last: 'McGonagall' },
+//   { first: 'Severus', last: 'Snape' }
+// ];
+
+// const firstNames = fullNames.map(function (name) {
+//   return name.first;
+// });
+ 
+// console.log(firstNames);
+
+// }
+
+
+// Com o mesmo array inicial, apresentar na consola o nome completo
+
+  
+ 
+
+// fullNames.forEach(function (name) {
+//   console.log(name.first + ' ' + name.last);
+//   }
+// );
+
+// o name é um item e dentro de cada item no array há objetos.
+// forEach é para procurar no array os elementos um a um.
+
+
+// pp88
+ 
+//Forma tradicional
+// function greet(name){
+//   console.log ('Hey ' + name);
+// }
+ 
+// let myName = prompt('Qual é o teu nome?')
+// greet(myName);
+ 
+ 
+//Forma com Argumentos
+// function greet(name){
+//   return 'Hey' + name
+// }
+ 
+ 
+//pode-se chamar no botao com o onclik
+ 
+//Com Arrow Functions
+
+// const greet = (name) => {
+//   return 'Hey ' + name;
+// }
+
+const greet = name => 'Hey ' + name; // Arrow function com um único argumento não precisa de parênteses
+ 
+// const isEven (é a função) = num (é o argumento) => num % 2 === 0 (é o código que executa a função);
+
+
+
 
 
 
