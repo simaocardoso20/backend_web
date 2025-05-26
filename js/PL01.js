@@ -1,18 +1,22 @@
-
 // Ex01
 function multiply(num1,num2) {
     let total = num1 * num2;
-    return 'O resultado da multiplicação é: ' + total;
+    console.log('O resultado da multiplicação é: ' + total);
+    return total;
 }
+
 
 
 
 // Ex02
 function isShortsWeather(temperature) {
     if (temperature > 25) {
-        return 'Verdadeiro';
+        console.log('Hoje vai estar calor, um gelado vai-te saber bem!');
+        return true;
+        
     } else {
-        return 'Falso';
+        console.log('Hoje a temperatura vai baixar, agasalha-te!');
+        return false;   
     }
 }
 
@@ -22,12 +26,14 @@ function isShortsWeather(temperature) {
 // Ex03
 function lastElement(array) {
       if (array.length === 0) {
+        console.log('A lista está vazia.');
         return null;
       } else {
-  return "O último elemento do array é: " + array[array.length - 1];
+        console.log('O último elemento da lista é: ' + array[array.length - 1]);
+  return array[array.length - 1];
+      }
+}
 
-}
-}
 
 
 
@@ -37,7 +43,8 @@ function sumArray(array) {
         for (let i = 0; i < array.length; i++){
         sum += array[i];
     }
-    return 'A soma de todos os números é: ' + sum; 
+    console.log('A soma de todos os números é: ' + sum);
+    return sum; 
 }
 
 
@@ -46,8 +53,28 @@ function sumArray(array) {
 // Ex05
 function returnDay(dayNum) {
     if(dayNum < 1 || dayNum > 7) {
+        console.log('Número inválido. Escolhe um número de 1 à 7.');
         return 'Null';
     }
+
     const days = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo'];
-    return 'O dia da semana é: ' +days[dayNum - 1];
+    
+      switch (dayNum) {
+        case 4:
+            console.log('Hoje é quinta-feira, aguenta que já falta pouco para o fim de semana.');
+            break;
+        case 5:
+            console.log('Hoje é sexta-feira, o dia mais esperado da semana!');
+            break;
+        case 6:
+            console.log('Yupi! Chegou sábado!');
+            break;
+        case 7:
+            console.log('Bom domingo!');
+            break;
+        default:
+            console.log('Hoje é ' + days[dayNum - 1] + '. Tem uma boa semana!');
+    }
+
+    return days[dayNum - 1];
 }
