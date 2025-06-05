@@ -1,10 +1,12 @@
-function changeImg() {
-    const myImage = document.querySelector("img");
-    myImage.setAttribute("src", "https://devsprouthosting.com/images/chicken.jpg");
+let myEggOrChickenImg = document.querySelector('img');
+ 
+function eggOrChicken(){
+    if(myEggOrChickenImg.src == 'https://devsprouthosting.com/images/chicken.jpg'){
+        myEggOrChickenImg.src = 'https://devsprouthosting.com/images/egg.jpg';
+    } else {
+    //Muda o atributo src do atributo seleccionado
+    myEggOrChickenImg.src = 'https://devsprouthosting.com/images/chicken.jpg';
+    }
 }
-const myImage = document.querySelector("img");
-myImage.getAttribute("src", "https://devsprouthosting.com/images/egg.jpg");
 
-
-myImage.setAttribute("src", "https://devsprouthosting.com/images/chicken.jpg");
 

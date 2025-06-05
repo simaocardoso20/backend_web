@@ -168,11 +168,41 @@
 //   return 'Hey ' + name;
 // }
 
-const greet = name => 'Hey ' + name; // Arrow function com um único argumento não precisa de parênteses
+//const greet = name => 'Hey ' + name; // Arrow function com um único argumento não precisa de parênteses
  
 // const isEven (é a função) = num (é o argumento) => num % 2 === 0 (é o código que executa a função);
 
+//pp 94
 
+// function validUserNames(arrUserNames){
+//     const filteredUserNames = arrUserNames.filter((username) => {
+//         return username.length < 10;
+//     });
+//     return filteredUserNames;
+// }
+
+// Isto é uma forma de chamar a função na consola
+// validUserNames =(['mark', 'staceysmom1978', 'q29832128238983', 'carries98', 'MoanaFan'])
+
+
+
+
+// validUserNames = ['mark', 'staceysmom1978', 'q29832128238983', 'carries98', 'MoanaFan'];
+
+// odds = validUserNames.filter((username) => {
+//   return username.length < 10;
+// });
+
+// console.log(odds);
+
+// //pp 97
+// arrNumbers = (5,2)
+// function allEvens (arrNums){
+//     return arrNums.every(number => number % 2 === 0);
+//     };
+
+
+   
 
 
 
