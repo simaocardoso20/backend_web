@@ -78,13 +78,35 @@ class UserController extends Controller
 
      //função que retorna a view de um user (o que estámos a clicar)
     public function viewUser($id){
-        return view('users.show_user');
+       
+        $myUser = User::where('id', $id)->first(); 
+
+         return view('users.show_user' , compact('myUser'));
+
     }
 
     public function deleteUser($id){
         Db::table('users')->where('id', $id)->delete();
  
         return back();
+    }
+
+
+    public function updateUser(Request $request){
+        //dd($request->all());
+
+        $request->validate([
+            'name' => 'required',
+        ]);
+
+        user::where('id', $request->id)
+            ->update([
+                'name' => $request->name, 
+                'nif' => $request->nif,
+                'address' => $request->address,
+            ]);
+
+            return redirect()->route('users.all')->with('message', 'Utilizador actualizado com sucesso!');
     }
 
 

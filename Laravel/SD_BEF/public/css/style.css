@@ -1,3 +1,58 @@
 body {
-    background-color: #ddd8bb;
+    background-color: #482477;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f0;
+}
+
+ul li a {
+  color: white;
+  font-size: 20px; /* aumenta o tamanho */
+  text-decoration: none; /* opcional: remove o sublinhado */
+}
+
+ul li a:hover {
+  text-decoration: underline; /* opcional: sublinha no hover */
+}
+
+ul li {
+  color: white;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+}
+
+form input,
+form textarea,
+form select,
+form label {
+  color: white;
+  font-size: 18px;
+}
+
+#emailHelp {
+  font-size: 18px; /* maior que o padrão */
+  color: white;
+}
+
+.form-control-dark {
+  color: black;
+}
+
+.form-control-dark option {
+  color: black;
+}
+
+h5 a {
+    color: white;
+    text-decoration: none; 
 }

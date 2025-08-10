@@ -5,8 +5,10 @@
             {{ session('message') }}
         </div>
     @endif
-    <h4>Aqui terás todos os users</h4>
-    <h6>Responsável</h6>
+    <br></br>
+    <h1>Olá! Aqui terás todos os users</h1>
+    <br></br>
+    <h4>Responsável</h4>
     <ul>
         <li>Nome: {{ $courseResp ? $courseResp->name : 'ainda não atribuído' }}</li>
         <li>Email: {{ $courseResp ? $courseResp->email : 'geral@cesae.pt' }}</li>
@@ -27,6 +29,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Email</th>
                 <th scope="col">NIF</th>
+                <th scope="col">Morada</th>
                 <th></th>
             </tr>
         </thead>
@@ -36,8 +39,9 @@
                     <th scope="row">{{ $user->id }}</th>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
-                    <td>{{ $user->nif }}</td>  
-                    <td><a href="{{route('user.show', $user->id)}}" class="btn btn-info me-2">Ver</a><a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">Apagar</a></td>
+                    <td>{{ $user->nif }}</td> 
+                     <td>{{ $user->address }}</td> 
+                    <td><a href="{{route('user.show', $user->id)}}" class="btn btn-info me-2">Ver/Editar</a><a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">Apagar</a></td>
                
                 </tr>
             
@@ -46,4 +50,5 @@
 
         </tbody>
     </table>
+    <h5><a href="{{ route('homepage') }}">Homepage</a></h5>
 @endsection
