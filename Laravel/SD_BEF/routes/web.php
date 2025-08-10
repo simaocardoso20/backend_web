@@ -7,7 +7,7 @@ use App\Http\Controllers\UtilController;
 use App\Http\Controllers\BookController;
 
 // Rota da página inicial que aponta diretamente para o controlador
-Route::get('/homepage', [UtilController::class, 'index'])->name('homepage');
+Route::get('/', [UtilController::class, 'index'])->name('homepage');
 
 Route::get('/hello', [UtilController::class, 'sayHello'])->name('hello_route_name');
 Route::get('/curso', function(){
